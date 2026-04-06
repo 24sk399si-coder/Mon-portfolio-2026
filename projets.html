@@ -11,23 +11,130 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
+    <header><div>
             <a href="">Mon portfolio</a>
         </div>
-        <nav>
-            <ul>
+            <ul class="list">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html"class="active">Projet</a></li>
                 <li><a href="Passions.html">Passion</a></li>
                 <li><a href="divertissement.html">Divertissement</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
-        </nav>
     </header>
-   <main>
-    <h1>voici mes projets</h1>
-   </main>
+    <main>
+        <section class="projets">
+            <h1>mes réalisation</h1>
+            <div>
+                <article class="partie">
+                    <img src="image/ECM.jpg" alt="ECM" width="250">
+                    <div class="texte-liens">
+                        <h3>site E-commerce</h3>
+                        <p>une boutique en lingne complète dévéloppée <br> avec HTML, CSS et JavaScript pur. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div><hr>
+                    <div class="liens">
+                         <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                        <a href=""><i class="fa-graphite fa-thin fa-share"></i>Démo</a>
+                    </div>
+                </article>
+
+                <article class="partie">
+                    <img src="image/T.jpg" alt="T" width="250">
+                    <div class="texte-liens">
+                        <h3>Getion de taches</h3>
+                        <p>Application web pour organiser les projet <br> quotidiens avec stockage local. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>Python</span>
+                        <span>Flach</span>
+                    </div><hr>
+                    <div class="liens">
+                         <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                        <a href=""><i class="fa-graphite fa-thin fa-share"></i>Démo</a>
+                    </div>
+                </article>
+
+                <article class="partie">
+                    <img src="image/BLOG.jpg" alt="BLOG" width="250">
+                    <div class="texte-liens">
+                        <h3>Blog personnel</h3>
+                        <p>projet en cours de migration vers laravel <br> pour apprendre le Backend. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>PHPL</span>
+                        <span>Laravel</span>
+                    </div><hr>
+                    <div class="liens">
+                         <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                        <a href=""><i class="fa-solid fa-clock"></i>Bientot</a>
+                    </div>
+                </article>
+
+                <article class="partie">
+                    <img src="image/DASH.jpg" alt="DASH" width="250">
+                    <div class="texte-liens">
+                        <h3>Deshboard d'Analyse</h3>
+                        <p>Visuelle des données dynamique<br> Python et la bibliothèque matplotlib. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>Python</span>
+                        <span>Data</span>
+                    </div><hr>
+                    <div class="liens">
+                         <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                        <a href=""><ion-icon name="open-outline"></ion-icon>Démo</a>
+                    </div>
+                </article>
+
+                <article class="partie">
+                    <img src="image/AP.jpg" alt="AP" width="250">
+                    <div class="texte-liens">
+                        <h3>Application méteo</h3>
+                        <p>une Application utilisant une API en temps <br> réel pour afficher la météo mondial. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>API</span>
+                        <span>JavaScript</span>
+                    </div><hr>
+                    <div class="liens">
+                        <a href=""><i class="fa-brands fa-github"></i>Code</a>
+                        <a href=""><ion-icon name="open-outline"></ion-icon>Démo</a>
+                    </div>
+                </article>
+
+                <article class="partie">
+                    <img src="image/MB.jpg" alt="MB" width="250">
+                    <div class="texte-liens">
+                        <h3>Maquette Mobile UI</h3>
+                        <p>Conception d'une interface utilisateur<br> moderne pour une application de fitness. </p>
+
+                    </div>
+                    <div class="langages">
+                        <span>Figma</span>
+                        <span>Design</span>
+                    </div><hr>
+                    <div class="liens">
+                        <a href=""><i class="fa-brands fa-figma"></i></i>Design</a>
+                        <a href=""><i class="fa-solid fa-eye"></i>Apperçu</a>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        </main>
+        
     <footer>
         <p>copy; Tegra Kilunda. Tout droit reservé.</p>
         <div>
@@ -36,7 +143,111 @@
             <a href=""><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.js"></script>
+
 </body>
+<style>
+ /*Definir mon body */  
+    body{
+        background-color: #f8f8f8;
+        font-family: Roboto, sans-serif;
+    }
+    section h1{
+        color: var(--violet-doux);
+        font-weight: 700;
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 5px;
+    }
+    section h1::after{
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: var(--violet-doux);
+        display: block;
+        margin: 1.4rem auto;
+        border-radius: 5px;
+    }
+    section div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25PX;
+        margin: auto 2PX;
+        max-width: 1255px;
+        margin: auto;
+        padding-left: 20px;
+    
+    }
+    section div h3{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #6c63ff;
+    }
+    article {
+        width: 390px;
+        height: 450px;
+        justify-self: center;
+    }
+    article div{
+        display: block;
+        line-height: 25px;
+    }
+    article div p{
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 25px;
+    }
+    article div span{
+        color: #6c63ff;
+        font-weight: bold;
+        margin-left: 15PX;
+        border: 1PX solid #66666688;
+        padding: 1px 5px;
+        border-radius: 10px;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+    article .langages{
+        margin-bottom: 38px;
+    }
+    article div span:hover{
+        color: #ffa726;
+    }
+    section  div a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+    section div a:hover{
+        color: #ffa726;
+        transform: translatey(-3px);
+    }
+    .partie{
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .partie img{
+        width: 100%;
+        height: 180px;
+        border-bottom: 3px solid #6c63ff;
+        object-fit: cover;
+    }
+    article .liens{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 10px 25px;
+    }
+    hr{
+        width: 80%;
+        margin: auto;
+    }
+</style>
 </html>
+
 
